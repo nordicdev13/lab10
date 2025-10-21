@@ -56,21 +56,18 @@ class _ColorPickerPageState extends State<ColorPickerPage> {
             buildColorSlider(
               label: "Red",
               value: red,
-              color: Colors.red,
               onChanged: (value) => setState(() => red = value),
             ),
 
             buildColorSlider(
               label: "Green",
               value: green,
-              color: Colors.green,
               onChanged: (value) => setState(() => green = value),
             ),
 
             buildColorSlider(
               label: "Blue",
               value: blue,
-              color: Colors.blue,
               onChanged: (value) => setState(() => blue = value),
             ),
           ],
@@ -82,7 +79,6 @@ class _ColorPickerPageState extends State<ColorPickerPage> {
   Widget buildColorSlider({
     required String label,
     required double value,
-    required Color color,
     required Function(double) onChanged,
   }) {
     return Column(
